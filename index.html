@@ -6,19 +6,135 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Modelo</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="./assets/js/main.js" defer></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
   </head>
 
   <body>
     <section class="container">
-      <h1>Lorem ipsum dolor sit amet</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus
-        nisi explicabo saepe voluptatibus consequuntur et corporis maxime quos,
-        doloribus vitae voluptatum quisquam necessitatibus pariatur veritatis
-        exercitationem beatae officiis suscipit Ea!
-      </p>
+      <div class="navegator-container">
+        <div class="navegator-logo">
+          <h1>LEAK</h1>
+          <p>Search Website.</p>
+        </div>
+        <div class="searchInput">
+          <input type="search" name="" id="" />
+          <div class="btn">
+            <button type="submit"></button>
+          </div>
+        </div>
+        <nav class="navegator">
+          <ul>
+            <li>Donates</li>
+            <li>New Account</li>
+            <li>Login</li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="main">
+        <aside class="anexos">
+          <h1>Conteúdo</h1>
+          <div class="anexos-container">
+            <details open>
+              <summary>Força de Lorentz</summary>
+              <ul>
+                <li><a href="#conceitos">Início</a></li>
+                <li><a href="#seguranca">História</a></li>
+                <li>
+                  <a href="#conceitos"
+                    >Força de Lorentz em termos de campos potencias</a
+                  >
+                </li>
+                <li><a href="#seguranca">O canhão elétrico: "RailGun"</a></li>
+                <li><a href="#seguranca">Referências</a></li>
+              </ul>
+            </details>
+          </div>
+        </aside>
+
+        <article class="article-main">
+          <h1>Força de Lorentz</h1>
+          <div class="line"></div>
+          <div class="textAndImg">
+            <div class="text-content">
+              <p>
+                Em física, a força de Lorentz é resultado da superposição da
+                força elétrica proveniente de um campo elétrico
+                <span>E</span> com a força magnética devida a um campo magnético
+                <span>B</span> atuando sobre uma partícula carregada
+                eletricamente que se move no espaço. Tal força é dada pela
+                fórmula:
+              </p>
+              <p>
+                $$ \mathbf{F} = q(\mathbf{E} + \mathbf{v} \times \mathbf{B}) $$
+              </p>
+
+              <p>
+                Evidentemente, para que a superposição ocorra é necessário que a
+                partícula possua uma carga elétrica líquida não nula e esteja em
+                movimento em uma região do espaço onde haja um campo magnético.
+                Analisando apenas as forças de caráter elétrico, se a velocidade
+                <span>v</span>
+                for nula, a partícula estará somente sob influência da força
+                elétrica:
+              </p>
+              <p>$$ \mathbf{F} = \mathbf{Fe} = q\mathbf{E} $$</p>
+
+              <p>
+                A contribuição a <span>F</span> devida à força elétrica
+                <span>Fe</span> é paralela ao campo elétrico <span>E</span>,
+                resultando em aceleração da partícula carregada na mesma direção
+                e sentido do campo; uma partícula com carga negativa sofrerá
+                aceleração no sentido contrário ao do campo. A contribuição
+                referente à força magnética é sempre perpendicular ao campo
+                <span>B</span> e à velocidade <span>v</span>, simultaneamente,
+                conforme dita a regra do produto vetorial.
+              </p>
+            </div>
+
+            <div class="img-content">
+              <p class="title-img-article">Artigo sobre:</p>
+              <h1><span>Força de Lorentz</span></h1>
+              <div class="line-img-1"></div>
+              <img
+                src="assets/img/efeito motor 3.png"
+                alt="Força de Lorentz img"
+              />
+              <p class="title-ul">Artigo abrange tais conteudos abaixo:</p>
+              <div class="line-img-2"></div>
+              <ul>
+                <li>Eletricidade</li>
+                <li>Magnetismo</li>
+                <li>Física</li>
+              </ul>
+            </div>
+          </div>
+          <br />
+          <p>
+            Vale a pena notar que a força magnética não realiza trabalho, uma
+            vez que é perpendicular ao deslocamento (ou seja, não existe
+            componente de <span>Fm</span> na direção de <span>v</span>
+            ). A força magnética altera a direção da velocidade sem alterar o
+            seu módulo. Porém, como a força de Lorentz possui uma componente
+            devida ao campo elétrico, essa, sim, pode realizar trabalho.
+          </p>
+
+          <p>
+            Algumas referências[1] definem a força de Lorentz apenas como a
+            componente de origem magnética, dando à força eletromagnética total
+            algum outro nome. Neste artigo, o termo força de Lorentz refere-se à
+            força elétrica mais a força magnética. A componente magnética da
+            força de Lorentz se manifesta também como a força que atua em um fio
+            conduzindo uma corrente elétrica imerso em uma região com campo
+            magnético, também conhecida como força de Laplace.
+          </p>
+        </article>
+      </div>
     </section>
   </body>
 </html>
