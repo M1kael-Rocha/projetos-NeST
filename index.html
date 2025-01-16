@@ -22,9 +22,9 @@
           <p>Search Website.</p>
         </div>
         <div class="searchInput">
-          <input type="search" name="" id="" />
+          <input placeholder="Pesquisar" type="search" name="" id="" />
           <div class="btn">
-            <button type="submit"></button>
+            <button type="submit">🔎</button>
           </div>
         </div>
         <nav class="navegator">
@@ -43,22 +43,23 @@
             <details open>
               <summary>Força de Lorentz</summary>
               <ul>
-                <li><a href="#conceitos">Início</a></li>
-                <li><a href="#seguranca">História</a></li>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#história">História</a></li>
                 <li>
-                  <a href="#conceitos"
-                    >Força de Lorentz em termos de campos potencias</a
+                  <a href="#camposP">
+                    Força de Lorentz em termos de campos potencias</a
                   >
                 </li>
-                <li><a href="#seguranca">O canhão elétrico: "RailGun"</a></li>
-                <li><a href="#seguranca">Referências</a></li>
+                <li><a href="#confMag">Confinamento magnético</a></li>
+                <li><a href="#railgun">O canhão elétrico: "RailGun"</a></li>
+                <li><a href="#ref">Referências</a></li>
               </ul>
             </details>
           </div>
         </aside>
 
         <article class="article-main">
-          <h1>Força de Lorentz</h1>
+          <h1 id="inicio">Força de Lorentz</h1>
           <div class="line"></div>
           <div class="textAndImg">
             <div class="text-content">
@@ -102,12 +103,13 @@
               <h1><span>Força de Lorentz</span></h1>
               <div class="line-img-1"></div>
               <img
+                class="img-inicio"
                 src="assets/img/efeito motor 3.png"
                 alt="Força de Lorentz img"
               />
               <p class="title-ul">Artigo abrange tais conteudos abaixo:</p>
               <div class="line-img-2"></div>
-              <ul>
+              <ul class="list-tags">
                 <li>Eletricidade</li>
                 <li>Magnetismo</li>
                 <li>Física</li>
@@ -125,16 +127,329 @@
           </p>
 
           <p>
-            Algumas referências[1] definem a força de Lorentz apenas como a
-            componente de origem magnética, dando à força eletromagnética total
-            algum outro nome. Neste artigo, o termo força de Lorentz refere-se à
-            força elétrica mais a força magnética. A componente magnética da
-            força de Lorentz se manifesta também como a força que atua em um fio
-            conduzindo uma corrente elétrica imerso em uma região com campo
-            magnético, também conhecida como força de Laplace.
+            Algumas referências<a href="#ref1"><sup>[1]</sup></a> definem a
+            força de Lorentz apenas como a componente de origem magnética, dando
+            à força eletromagnética total algum outro nome. Neste artigo, o
+            termo força de Lorentz refere-se à força elétrica mais a força
+            magnética. A componente magnética da força de Lorentz se manifesta
+            também como a força que atua em um fio conduzindo uma corrente
+            elétrica imerso em uma região com campo magnético, também conhecida
+            como força de Laplace.
           </p>
+
+          <h2 id="história">História</h2>
+          <div class="line"></div>
+          <p>
+            Joseph Priestley, amigo de Benjamin Franklin, foi o primeiro a
+            publicar, em 1767, a lei que ditava a força entre duas cargas
+            elétricas a determinada distância, após o pedido de seu amigo para
+            confirmar o resultado de uma experiência que havia realizado<a
+              href="#ref2"
+              ><sup>[2]</sup></a
+            >. A lei de força entre polos magnéticos (força essa já citada por
+            Isaac Newton em seu Principia) foi descoberta por John Michell,
+            inventor da balança de torção, que publicou seus resultados em 1750.
+            Em suas palavras:
+          </p>
+          <div class="his-cit">
+            <p>
+              <i
+                >"A atração e repulsão entre 'imãs' diminui enquanto o quadrado
+                da distância entre os respectivos polos aumenta".</i
+              >
+            </p>
+          </div>
+          <p>
+            Depois de Michell, o resultado foi confirmado por Tobias Meyer em
+            1760 e pelo famoso matemático Johann Heinrich Lambert em 1766. A lei
+            de Coulomb foi publicada por Charles Augustin de Coulomb apenas em
+            1785. Em todas essas definições, a força é sempre descrita em termos
+            das propriedades e distâncias dos objetos envolvidos, sem menções a
+            "campo magnético" ou campo "elétrico".
+          </p>
+          <br />
+          <p>
+            Apesar da força de Lorentz levar o nome do físico holandês, sua
+            expressão foi encontrada por diversos personagens da Física, em
+            diferentes anos<a href="#ref3"><sup>[3]</sup></a
+            >.
+          </p>
+          <br />
+          <p>
+            Comumente a força de Lorentz é atribuída a Joseph John Thomson e
+            Oliver Heaviside. Em abril de 1881, Thomsom publicou um artigo<a
+              href="#ref4"
+              ><sup>[4]</sup></a
+            >
+            onde apresentava a expressão para a força exercida sobre uma
+            partícula eletrizada em movimento numa região de campo magnético.
+            Neste artigo, Thomson partiu da ideia, baseada na teoria de Maxwell,
+            que a variação temporal do vetor deslocamento elétrico
+            <span>D</span>
+            em um dielétrico produz efeitos análogos aos de uma corrente de
+            condução. Thomson encontrou um resultado que é metade do valor hoje
+            aceito:
+          </p>
+
+          <p>$$ \mathbf{F} = \frac{q}{2}\mathbf{v} \times \mathbf{B} $$</p>
+
+          <p>
+            Em novembro de 1881, FitzGerald publica um artigo apontando uma má
+            interpretação em relação à corrente de deslocamento na publicação de
+            Thomson. E em abril de 1889 Heaviside publica um artigo<a
+              href="#ref5"
+              ><sup>[5]</sup></a
+            >
+            onde apresenta a expressão hoje usada para descrever a força
+            magnética. A equação da força que inclui a contribuição simultânea
+            do campo elétrico e magnético foi escrita somente em 1892, por
+            Hendrik Antoon Lorentz, em um artigo publicado no volume 25 dos
+            Archives Néerlandaises des Sciences Exactes et Naturelles. Chamada
+            por ele de "força ponderomotiva", a hoje denominada a força de
+            Lorentz foi obtida com o auxílio de seis hipóteses, a partir de uma
+            perspectiva mecânica, e das equações de Maxwell. A dedução feita por
+            Lorentz pode ser encontrada na página 35 da referência.
+          </p>
+
+          <h2 id="camposP">Força de Lorentz em termos de campos potencias</h2>
+          <div class="line"></div>
+          <p>
+            O campo elétrico <span>E</span> e magnético <span>B</span> podem ser
+            escritos em termos do potencial eletrostático <span>ϕ</span> e do
+            vetor potencial magnético <span>A</span>, respectivamente.
+          </p>
+
+          <p>
+            $$ \mathbf{E} = - \nabla \phi - \frac{\partial \mathbf{A}}{\partial
+            t} $$ $$ \mathbf{B} = \nabla \times \mathbf{A} $$
+          </p>
+
+          <p>Assim, a equação para a força de Lorentz se torna:</p>
+          <p>
+            $$ \mathbf{F} = q \left[ - \nabla \phi - \frac{\partial
+            \mathbf{A}}{\partial t} + \mathbf{v} \times \left( \nabla \times
+            \mathbf{A} \right) \right] $$
+          </p>
+
+          <p>
+            Aplicando a identidade de produto vetorial triplo, a equação se
+            simplifica para:
+          </p>
+          <p>
+            $$ \mathbf{F} = q \left[ - \nabla \phi - \frac{\partial
+            \mathbf{A}}{\partial t} + \nabla (\mathbf{v} \cdot \mathbf{A}) -
+            (\mathbf{v} \cdot \nabla) \mathbf{A} \right] $$
+          </p>
+
+          <h2 id="confMag">Confinamento magnético</h2>
+          <div class="line"></div>
+          <p>
+            Com uma configuração adequada das linhas do campo magnético, é
+            possível o confinamento de partículas carregadas. Tal confinamento
+            magnético é uma dos modos utilizados em reatores nucleares de fusão
+            como o Tokamak e o Stellarator para o aprisionamento do plasma a
+            altíssimas temperaturas e pressões necessárias para a realização de
+            uma reação de fusão nuclear<a href="#ref7"><sup>[7]</sup></a
+            >. A configuração de linhas de campo magnético utilizada é parecida
+            com a existente no caso de um fio enrolado na forma de um solenóide,
+            onde o campo magnético é paralelo ao eixo desse. No caso do Tokamak,
+            tem-se algo parecido com uma bobina fechada, disposta na forma de um
+            toróide, de forma que plasma interior execute uma trajetória
+            espiralada ao redor das linhas de campo.
+          </p>
+          <br />
+
+          <p>
+            confinamento magnético também é usado para a criação de armadilhas
+            para antimatéria. Para evitar sua aniquilação por contato com a
+            matéria, uma combinação de campos elétricos e magnéticos em vácuo é
+            utilizada para aprisionar antimatéria.
+          </p>
+          <br />
+
+          <p>
+            O campo magnético terrestre possui linhas que saem do pólo sul
+            magnético e entram pelo pólo norte magnético e é capaz de aprisionar
+            partículas carregadas formando o Cinturão de Van Allen. As
+            partículas no cinturão são provenientes, em sua maioria, dos ventos
+            solares e dos raios cósmicos, e se dispõem em duas regiões:
+          </p>
+          <br />
+
+          <ul class="list-confmag">
+            <li>
+              o cinturão mais interno é composto por elétrons e prótons com
+              altas energias, provenientes do decaimento de nêutrons produzidos
+              pelos raios cósmicos que colidem com os átomos da atmosfera
+              terrestre. Tais nêutrons, após a colisão, são ejetados para fora e
+              se desintegram ao passar pela região cinturão. Os prótons e
+              elétrons ficam confinados na região do cinturão, devido ao intenso
+              campo magnético existente, e se movem em trajetórias espirais ao
+              longo de linhas de força gerada pelo campo.
+            </li>
+            <br />
+            <li>
+              a região mais externa do cinturão possui elétrons mais
+              energéticos, do que na camada mais interna, e íons, tais como
+              partículas alfa e O+, de forma similar à ionosfera, porém muito
+              mais energético.
+            </li>
+          </ul>
+
+          <h2 id="railgun">O canhão elétrico: "RailGun"</h2>
+          <div class="line"></div>
+          <div class="textAndImg">
+            <div class="text-content" id="inicio">
+              <p>
+                Também existem pesquisas sendo feitas para o desenvolvimento de
+                armamentos militares que utilizam a força de Lorentz para
+                impulsionar seus projeteis. O Railgun é formado de dois trilhos,
+                por onde desliza uma haste que segura um projétil, formando
+                assim um circuito fechado (junto com um gerador). Tanto os
+                trilhos, como a haste, são condutores. Uma corrente elétrica
+                entra por um dos trilhos, passa pela haste, regressando pelo
+                trilho paralelo. Quando a corrente passa pelo trilho, esta gera
+                um campo magnético em torno do próprio trilho (da mesma forma
+                que uma corrente passando por um fio forma um campo magnético
+                circular). Como a corrente que passa no trilho paralelo segue na
+                direção oposta, o campo gerado entre os trilhos não é anulado. A
+                corrente, ao passar pela haste, transversal ao trilho, gera uma
+                força que impulsiona a própria haste (junto com o projétil).
+              </p>
+              <br />
+
+              <p>
+                Em aplicações militares, a corrente elétrica utilizada é da
+                ordem de 5 MA durante alguns milissegundos, gerando campos da
+                ordem de 10 T (o campo magnético da Terra não ultrapassa 1
+                microtesla). Em dezembro de 2010, o "US Office of Naval Research
+                - ONR" (Escritório de pesquisas navais dos Estados Unidos)
+                realizou um tiro utilizando 32 MJ. O projetil de 10,4 kg atingiu
+                a velocidade de 9 000 km/h (mach 7).
+              </p>
+              <br />
+
+              <p>
+                Como já supracitado, os railguns ainda estão em fase de pesquisa
+                e desenvolvimento, mas têm o potencial de revolucionar a
+                artilharia devido à sua capacidade de disparar projéteis com
+                maior velocidade e alcance do que as armas tradicionais.
+              </p>
+            </div>
+
+            <div class="img-content">
+              <h1><span>RailGun</span></h1>
+              <div class="line-img-1"></div>
+              <img
+                class="img-railgun"
+                src="assets/img/railgun.jpg"
+                alt="railgun img"
+              />
+              <div class="line-img-2"></div>
+              <p class="leg-confmag">
+                Frame retirado de uma câmera de um projétil viajando a 2520 m/s
+              </p>
+            </div>
+          </div>
+
+          <h2 id="ref">Referências</h2>
+          <div class="line"></div>
+          <ol class="ref-container">
+            <li>
+              <a
+                href="https://pt.wikipedia.org/wiki/David_Griffiths_(físico)"
+                target="_blank"
+                id="ref1"
+                rel="noopener noreferrer"
+                >Griffiths, David J.. Eletrodinâmica, 3ª edição.</a
+              >
+            </li>
+            <li>
+              <a href="#" target="_blank" id="ref2" rel="noopener noreferrer"
+                >Whittaker, Sir Edmund. A History of the Theories of the Aether
+                and Electricity, Vol. 1: The Classical Theories, London: Thomas
+                Nelson and Sons Ltd., 1951 (revised and enlarged edition of the
+                publication of 1910), p. 53.</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.teses.usp.br/teses/disponiveis/43/43134/tde-27082008-172025/publico/Dissert.pdf"
+                target="_blank"
+                id="ref3"
+                rel="noopener noreferrer"
+                >Tese de José Edmar Arantes Ribeiro - USP, "Sobre a Força de
+                Lorentz, Os Conceitos de Campo e a 'Essência' do
+                Eletromagnetismo Clássico".</a
+              >
+            </li>
+            <li>
+              <a href="#" target="_blank" id="ref4" rel="noopener noreferrer"
+                >Thomson, Sir J. J.. "On the Electric and Magnetic Effects
+                Produced by the Motion of Electrified Bodies", Philosophical
+                Magazine and Journal and Science 11: 229-49, 1881.</a
+              >
+            </li>
+            <li>
+              <a href="#" target="_blank" id="ref5" rel="noopener noreferrer"
+                >Heaviside, O.. "On the Electromagnetic Effects due to the
+                Motion of Electrification in a Dielectric", Philosofical
+                Magazine and Journal of Science 27: 324-39, 1889.</a
+              >
+            </li>
+            <li>
+              <a href="#" target="_blank" id="ref6" rel="noopener noreferrer"
+                >Mechanics (2a edição), Keith R. Symon, University of Wisconsin,
+                Addison-Wesley</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://ciencia.hsw.uol.com.br/reator-fusao-nuclear3.htm"
+                target="_blank"
+                id="ref7"
+                rel="noopener noreferrer"
+                >Como funcionam os reatores de fusão nuclear - Como tudo
+                funciona (How Stuff Works) Arquivado em 8 de agosto de 2012, no
+                Wayback Machine..</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://science.howstuffworks.com/dictionary/astronomy-terms/van-allen-radiation-belts-info.htm"
+                target="_blank"
+                id="ref8"
+                rel="noopener noreferrer"
+                >Cinturão de Van Allen - HowStuffWorks - Discovery
+                Communications.</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/Railgun"
+                target="_blank"
+                id="ref9"
+                rel="noopener noreferrer"
+                >Railgun (Canhão Elétrico) - Wikipédia, a enciclopédia livre.</a
+              >
+            </li>
+          </ol>
         </article>
       </div>
+      <footer class="footer-container">
+        <div class="footer-line"></div>
+        <div class="footer-content">
+          <div class="text-footer">
+            <p>
+              Esta página foi editada pela última vez por Mikael Rocha
+              Bernardes.
+            </p>
+          </div>
+          <div class="logoNest">
+            <img src="assets/img/nest-site (1).png" alt="nest logo png" />
+          </div>
+        </div>
+      </footer>
     </section>
   </body>
 </html>
