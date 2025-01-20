@@ -204,3 +204,33 @@ a{
   font-size: 15px;
   margin: 0;
 }
+
+.pager-container{
+  display: flex;
+  margin-left: 400px;
+  padding: 10px;
+}
+
+.pager-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pager-content h2{
+  font-size: 30px;
+}
+
+.pager-content h2{
+  margin: 0;
+}
+
+.arrow{
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.letterO{
+  color: rgb(55, 55, 201);
+  cursor: pointer;
+}
