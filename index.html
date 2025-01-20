@@ -12,13 +12,102 @@
 
   <body>
     <section class="container">
-      <h1>Lorem ipsum dolor sit amet</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus
-        nisi explicabo saepe voluptatibus consequuntur et corporis maxime quos,
-        doloribus vitae voluptatum quisquam necessitatibus pariatur veritatis
-        exercitationem beatae officiis suscipit Ea!
-      </p>
+      <div class="text-cadastro">
+        <h1>Cadastro de usuário NeST</h1>
+        <p>
+          Preencha o formulário para registrar um novo colaborador na NeST
+          Digital.
+        </p>
+      </div>
+      <form action="#" method="get" class="formulario">
+        <div class="form-left">
+          <input
+            class="inputForm"
+            type="text"
+            name="user"
+            id=""
+            placeholder="Nome completo*"
+            required
+          />
+          <br />
+          <select id="genero" name="genero">
+            <option value="n/s">Não especificado</option>
+            <option value="Homem">Homem</option>
+            <option value="Mulher">Mulher</option>
+            <option value="Outros">Outros</option>
+          </select>
+          <br />
+          <input
+            class="inputForm"
+            type="text"
+            name="phone"
+            id=""
+            placeholder="Telefone celular*"
+            required
+          /><br />
+          <input
+            class="inputForm"
+            type="password"
+            name="password"
+            id=""
+            placeholder="Crie sua senha*"
+            required
+          /><br />
+        </div>
+        <div class="form-right">
+          <input
+            class="inputForm"
+            type="number"
+            name="CPF"
+            id=""
+            placeholder="CPF*"
+            required
+          /><br />
+          <input
+            class="inputForm"
+            type="date"
+            name="birthday"
+            id=""
+            placeholder="Data de nascimento"
+          /><br />
+          <input
+            class="inputForm"
+            type="email"
+            name="email"
+            id=""
+            placeholder="E-mail*"
+            required
+          /><br />
+          <input
+            class="inputForm"
+            type="password"
+            name="password"
+            id=""
+            placeholder="Confirme sua senha*"
+            required
+          /><br />
+        </div>
+        <div class="confirm">
+          <div class="confirm-1">
+            <input type="checkbox" id="" name="" value="" required />
+            <label for=""
+              >Li e estou de acordo com as políticas da empresa e políticas de
+              privacidade.*</label
+            >
+          </div>
+          <br />
+          <div class="confirm-1">
+            <input type="checkbox" id="email" name="" value="" />
+            <label for="esportes"
+              >Quero receber novidades por e-mail, SMS ou WhatsApp!</label
+            >
+          </div>
+          <br />
+        </div>
+        <div class="btn">
+          <button>Registrar-se</button>
+        </div>
+      </form>
     </section>
   </body>
 </html>
