@@ -1,0 +1,206 @@
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #e2ddd9;
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 0 20px;
+}
+
+.img-logo{
+  width: 150px;
+  height: auto;
+}
+
+.header-left{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 40px;
+  width: 90%;
+}
+
+.header-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+}
+
+.search-header{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-search{
+  display: flex;
+  justify-content: end;
+  position: absolute;
+  right: 20px;
+  left: 0;
+  bottom: 30%;
+}
+
+.btn-search button{
+  height: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#searchInput{
+  width: 900px;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  background: #c9c8c8;
+}
+
+.user-google{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  color: #fff;
+  background: #000;
+  cursor: pointer;
+}
+
+.options ul{
+  display: flex;
+  margin: 0 0 10px 225px;
+  gap: 15px;
+  padding: 0;
+}
+
+.options ul li{
+  list-style: none;
+  font-size: 15px;
+}
+
+.line{
+  width: 100%;
+  height: 1px;
+  margin-bottom: 20px;
+  background: #b9b9b9;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a{
+  text-decoration: none;
+}
+
+.logo-link{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pesquisa{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.logo-pesquisa{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: #c9c8c8;
+  border-radius: 10px;
+}
+
+.title-1{
+  margin: 0;
+  font-size: 17px;
+  line-height: normal;
+  color: #000000;
+}
+
+.subtitle-1{
+  margin: 0;
+  font-size: 17px;
+  line-height: normal;
+  color: #525252;
+}
+
+.title-2{
+  margin: 10px 0 0px 0;
+  font-size: 20px;
+  line-height: normal;
+}
+
+.subtitle-2{
+  margin: 0;
+  font-size: 15px;
+  line-height: normal;
+  color: #525252;
+}
+
+.links-about{
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin: 0 500px 0 210px;
+}
+
+.about{
+  width: 800px;
+  height: 450px;
+  border: 1px solid #525252;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+
+.title-about h1{
+  margin: 0;
+}
+
+.subtitle-about p{
+  font-size: 15px;
+  margin: 0;
+}
+
+.informations p{
+  font-size: 15px;
+}
+
+.informations span{
+  font-weight: 700;
+}
+
+.nest-text h1{
+  font-size: 20px;
+  margin: 0;
+}
+
+.nest-text p{
+  font-size: 15px;
+  margin: 0;
+}
