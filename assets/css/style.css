@@ -146,8 +146,9 @@ body {
 .timeline-item-left::before{
   content: '';
   position: absolute;
-  left: 98%;
-  top: 50px;
+  top: 0;
+  left: 100%;
+  transform: translate(-50%, -50%);
   width: 45px;
   height: 45px;
   background-color: #3d423c;
@@ -157,8 +158,9 @@ body {
 .timeline-item-right::before{
   content: '';
   position: absolute;
-  right: 97%;
-  top: 50px;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
   width: 45px;
   height: 45px;
   background-color: #3d423c;
@@ -167,12 +169,12 @@ body {
 
 .line{
   position: absolute;
-  top: 10px;
+  top: -20px;
   left: 50%;
   transform: translate(-50%, -50%);
   transform: translateX(-50%);
   width: 8px;
-  height: 99%;
+  height: 101%;
   background-color: #3d423c;
   z-index: 2;
 }
@@ -233,6 +235,7 @@ body {
 .line{
   z-index: -1;
   top: -30px;
+  height: 100%;
 }
 
 .timeline-container{
