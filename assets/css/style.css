@@ -117,6 +117,8 @@ body {
 .timeline-container{
   display: flex;
   position: relative;
+  width: auto;
+  width: auto;
   flex-direction: column;
   margin: 20px 0 0 0;
   flex: 1;
@@ -165,10 +167,12 @@ body {
 
 .line{
   position: absolute;
-  top: -30px;
+  top: 10px;
   left: 50%;
+  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   width: 8px;
-  height: 1850px;
+  height: 99%;
   background-color: #3d423c;
   z-index: 2;
 }
@@ -186,6 +190,70 @@ body {
   color: #3d423c;
   text-align: center;
   font-size: 1rem;
+}
+
+@media screen and (max-width: 995px){
+.aboutNikola{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+  
+.imgNikola{
+  border: none;
+  display: flex;
+  background: none;
+  background-size: cover;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.legImg p{
+  text-align: center;
+  color: #3d423c;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.textAbout{
+  width: 100%;
+}
+
+.start-timeline{
+  font-size: 15px;
+}
+
+.line{
+  z-index: -1;
+  top: -30px;
+}
+
+.timeline-container{
+  gap: 50px;
+}
+
+.timeline-item-left,
+.timeline-item-right{
+  width: 100%;
+}
+
+.timeline-item-left::before,
+.timeline-item-right::before{
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35px;
+  height: 35px;
+}
+
+
 }
 
 
