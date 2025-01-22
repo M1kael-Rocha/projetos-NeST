@@ -12,10 +12,9 @@
 }
 
 body {
-  background: #000000;
   display: flex;
   justify-content: center;
-  align-items: center;
+  background: #000000;
 }
 
 .container {
@@ -305,4 +304,61 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media screen and (max-width: 995px){
+.searchInput,
+.navegator,
+.anexos,
+.footer-content,
+.footer-line{
+  display: none;
+}
+
+body {
+  display: block;
+}
+
+.container {
+  width: 100%;
+}
+
+.textAndImg{
+  flex-direction: column;
+}
+
+.text-content,
+.img-content{
+  width: 100%;
+}
+
+.article-main p{
+  font-size: 12px;
+}
+
+.article-main span{
+  font-size: 12px;
+}
+
+#inicio{
+  font-size: 25px;
+}
+
+.text-content p{
+  font-size: 12px;
+}
+
+.navegator-container{
+  margin-bottom: 40px;
+}
+
+.ref-container li{
+  font-size: 13px;
+}
+
+.list-confmag li{
+  font-size: 13px;
+}
+
+
 }
