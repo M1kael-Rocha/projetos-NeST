@@ -41,6 +41,7 @@ body {
 .form-left,
 .form-right{
   width: 45%;
+  height: auto;
 }
 
 .inputForm{
