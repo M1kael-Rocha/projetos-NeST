@@ -234,3 +234,58 @@ a{
   color: rgb(55, 55, 201);
   cursor: pointer;
 }
+
+@media screen and (max-width: 995px){
+
+.header-container{
+  justify-content: center;
+  width: 100%;
+}
+
+.header-left{
+  flex-direction: column;
+  gap: 5px;
+}
+
+.header-right{
+  display: none;
+}
+
+.search-header{
+  width: 100%;
+}
+
+#searchInput{
+  height: 40px;
+}
+
+.about{
+  display: none;
+}
+
+.links-about{
+  padding: 10px;
+  margin: 0;
+}
+
+.options{
+  display: flex;
+  justify-content: center;
+}
+
+.options ul{
+  margin: 0;
+  padding: 10px;
+}
+
+.options ul li{
+  font-size: 13px;
+}
+
+.pager-container{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+  
+}
